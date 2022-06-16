@@ -53,7 +53,7 @@ button {
 
         bttn.onclick = function () {
 
-          gameInstance = UnityLoader.instantiate("gameContainer", "/basio.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
+          gameInstance = UnityLoader.instantiate("gameContainer", "basio/basio.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
           this.remove();
         }
       }
